@@ -13,12 +13,12 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 p {
   font-family: "Source Sans Pro", sans-serif;
   color: #848484;
-  font-size: 16px;
 }
 
 h1,
@@ -169,7 +169,7 @@ a:hover {
 
 
 .preloader {
-  left: 50%;
+  left: 45%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -624,17 +624,18 @@ a:hover {
   margin-top: 80px;
 }
 
+
 .carousel-item .carousel-caption.intro h5{
   font-family: Mokoto, sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 500;
-  margin-bottom: -40px;
+  margin-bottom: -30px;
   -webkit-animation: contract-back 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s both;
 	        animation: contract-back 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s both;
 }
 
 .carousel-item .carousel-caption.intro h6 {
-  font-size: 1.8rem;
+  font-size: 1.8em!important;
   text-shadow: 1px 1px 1px #fff;
   color:rgba(255, 255, 255, .8);
   -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
@@ -666,15 +667,13 @@ a:hover {
   }
 }
 
-
 .carousel-item .carousel-caption h5{
-  font-size: 3rem!important;
+  font-size: 3em!important;
 }
 
 .carousel-item .carousel-caption h6{
-  font-size: 2.6rem!important;
+  font-size: 2.6em!important;
 }
-
 
 @-webkit-keyframes contract-back {
   0% {
@@ -707,11 +706,6 @@ a:hover {
             transform: translateZ(0);
     opacity: 1;
   }
-}
-
-.carousel-item .carousel-caption p{
-  font-size: 1.5rem!important;
-  color: #fff!important;
 }
 
 .introduction video {
@@ -1529,6 +1523,17 @@ svg {
     display: none;
   }
 
+  body{
+    font-size: 14px!important;
+  }
+
+  .carousel-inner{
+    margin-top: 10px;
+  }
+
+  .carousel-item .carousel-caption h5{ font-size: 2.2em!important;}
+  .carousel-item .carousel-caption h6{ font-size: 1.8em!important;}
+
   /* navigation */
   .navbar-inverse .navbar-nav li a {
     padding: 20px 10px;
@@ -1559,10 +1564,6 @@ svg {
     display: none;
   }
 
-  .clients-logo-slider {
-    text-align: center;
-  }
-
   /* h1 font size home slider */
   h1 {
     font-size: 30px;
@@ -1570,6 +1571,21 @@ svg {
 
   .carousel-caption img {
     width: 70%;
+  }
+
+  body{
+    font-size: 13px!important;
+  }
+
+  .carousel-inner{
+    margin-top: 20px;
+  }
+
+  .carousel-item .carousel-caption h5{ font-size: 4vw!important;}
+  .carousel-item .carousel-caption h6{ font-size: 3.5vw!important;}
+  .carousel-item .carousel-caption a{ 
+    font-size: 2.7vw!important;
+    padding: 1vw 1.2vw;
   }
 
   .wrap-about {
@@ -1608,22 +1624,6 @@ svg {
 
   #map-canvas {
     height: 250px;
-  }
-
-  /* footer */
-  .social-icon ul li,
-  .social-icon ul li:first-child {
-    margin: 15px;
-  }
-
-  .social-icon ul li a {
-    width: 50px;
-    height: 50px;
-  }
-
-  .social-icon ul li a i {
-    font-size: 24px;
-    line-height: 50px;
   }
 
 }
