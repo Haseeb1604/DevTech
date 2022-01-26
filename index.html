@@ -18,16 +18,11 @@
   <!-- CSS
   ================================================== -->
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-  <!-- animation css -->
-  <link rel="stylesheet" href="plugins/animate/animate.css">
-  <!-- Slick Carousel -->
-  <!-- <link rel="stylesheet" href="plugins/slick/slick.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- fontawesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome/all.min.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body id="body">
@@ -59,7 +54,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navigation">
-          <ul class="navbar-nav ml-auto text-center">
+          <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li>
             <li class="nav-item "> <a class="nav-link" href="about.html">About Us</a> </li>
             <li class="nav-item "> <a class="nav-link" href="service.html">Services</a> </li>
@@ -73,10 +68,68 @@
   <!-- Home Introduction -->
   <div class="introduction">
     <video playsinline autoplay muted loop class="introVideo">
-      <source src="DevTech.mp4" type="video/mp4">
-      <!-- <source src="movie.ogg" type="video/ogg"> -->
+      <source src="./pexels-tea-oebel-6804109.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-none w-100" alt="...">
+          <div class="container">
+            <div class="carousel-caption intro" data-bs-interval="8000">
+              <h5 class="Intro" >WE'RE <img src='./assets/logo-white.png' class="mb-4" width="40%" /> </h5>
+              <h6>A Team of Experts Developer</h6>
+              <a href="./about.html"
+                 class="btn-main fst-italic py-3 px-4 fs-5 mt-2 tilt-in-left" 
+                 style="text-transform:none;">About Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"  data-bs-interval="8000">
+          <img src="..." class="d-none w-100" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h5 class="lightSpeedInLeft animation-dely-1">We Believe that the best service</h5>
+              <h6 class="lightSpeedInRight animation-dely-2">Makes a customer, not a sale</h6>
+              <a href="./service.html"
+                 class="btn-main fst-italic py-3 px-4 fs-5 mt-2 tilt-in-left" 
+                 style="text-transform:none;">Our Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"  data-bs-interval="8000">
+          <img src="..." class="d-none w-100" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h5 class="lightSpeedInLeft animation-dely-1">Thats why we strive to be not</h5>
+              <h6 class="lightSpeedInRight animation-dely-2">just the best but legendary</h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"  data-bs-interval="8000">
+          <img src="..." class="d-none w-100" alt="...">
+          <div class="container">
+            <div class="carousel-caption">
+              <h5 class="lightSpeedInLeft animation-dely-1">We Begin With the End in Mind</h5>
+              <h6 class="lightSpeedInRight animation-dely-2">To solve a problem you may have</h6>
+              <h6 class="lightSpeedInRight animation-dely-2">so you can succeed</h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item"  data-bs-interval="12000">
+          <img src="..." class="d-none w-100" alt="...">
+          <div class="container">
+            <div class="carousel-caption ">
+              <h5 class="lightSpeedInLeft animation-dely-1">We're are the company you can trust</h5>
+              <h6 class="lightSpeedInRight animation-dely-2">You found us, Lets get started!</h6>
+              <a href="./contact.html" 
+                class="btn-main fst-italic p-3 fs-5 mt-2 tilt-in-left">Get Started</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 
   <!--
@@ -88,7 +141,7 @@ Start About Section
         <!-- section title -->
         <div class="col-12">
           <div class="title text-center">
-            <h2>We Are DevTech Agency</h2>
+            <h2 >We Are DevTech Agency</h2>
             <p>An Online Software Company which provide quality services to thier clients</p>
             <div class="border"></div>
           </div>
@@ -459,7 +512,8 @@ Start About Section
   <!-- <script src="plugins/jquery/jquery.min.js"></script> -->
 
   <!-- Bootstrap4 -->
-  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   <!-- Owl Carousel -->
   <!-- <script src="plugins/slick/slick.min.js"></script> -->
   <!-- Smooth Scroll js -->
