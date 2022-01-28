@@ -1,14 +1,14 @@
 (function () {
   'use strict';
-
   let _ = selector => {
     const el = document.querySelectorAll(selector);
     return el.length > 1 ? el : el[0];
   }
 
   window.addEventListener('load', () => {
+    _('.navbar-toggler').addEventListener("click", ()=> _('.navbar-toggler').classList.toggle("toggle"))
     /*	Page Preloader   */
-    setInterval(function () {
+    setInterval( () => {
       let preloader = _('#preloader');
       preloader.style.display = 'none';
       preloader.style.transition = 'all 1s ease';
