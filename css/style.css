@@ -275,24 +275,31 @@ a:hover { color: #28ABE3; }
 }
 
 .single-page-header {
-  background-image: url("../assets/about/about-header.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("../assets/theme-img.png");
   background-size: cover;
-  padding: 140px 0 70px;
+  background-position: center;
+  padding: 170px 0;
   text-align: center;
   color: #fff;
   position: relative;
 }
 
-.single-page-header:before {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.single-page-header h2{
+  font-size: 3.5em;
+  text-shadow: 1px 1px 2px #28ABE3, 2px 2px 2px #000;
 }
 
+.single-page-header .page-detail{
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px #28ABE3, 2px 2px 2px #000;
+  letter-spacing: 2px;
+  width: 60%;
+}
+
+/* .header-bradcrumb .breadcrumb{
+  margin-bottom: 0!important;
+  font-size: 1.2em;
+} */
 /*=================================================================
   Navigation
 ==================================================================*/
@@ -323,7 +330,7 @@ a:hover { color: #28ABE3; }
   padding: 20px 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: .5s ease-in-out 0s;
+  transition: .7s ease-in-out 0s;
 }
 
 .navigation .navbar-nav .nav-item .nav-link:hover,
@@ -543,6 +550,51 @@ a:hover { color: #28ABE3; }
   font-family: "Catamaran", sans-serif;
   letter-spacing: .9px;
   line-height: 1.5rem;
+}
+
+.team-box {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f3f2f2;
+  box-shadow: 7px 7px 21px #cacaca, -7px -7px 21px #ffffff;
+  border: none;
+}
+
+.team-box img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.team-box h5 {
+  font-weight: 900;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  /* text-shadow: 0px 3px 2px grey; */
+}
+
+.team-box h6 {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  /* text-shadow: 0px 1px 1px white, 0px 2px 1px grey; */
+}
+
+.team-box a {
+  text-decoration: none;
+  outline: none;
+  color: #474747;
+}
+
+.icons {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 /*==================================
@@ -1175,17 +1227,20 @@ svg {
   }
 }
 
-
 /*============================================================
 	Tablet (Portrait) Design for a width of 768px
 ==============================================================*/
 @media (max-width: 991px) {
+  body{
+    font-size: 14px!important;
+  }
+
   .navigation {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
     background: #fff;
   }
 
-  .navigation .nav-link {
+  .navigation .navbar-nav .nav-item .nav-link {
     color: #000;
     font-size: 1.2em;
     padding: 10px !important;
@@ -1201,10 +1256,6 @@ svg {
 
   .navbar-brand img{
     width: 180px;
-  }
-
-  body{
-    font-size: 14px!important;
   }
 
   .carousel-inner{
@@ -1230,10 +1281,18 @@ svg {
   }
 
   /* about us */
-
   .about-content {
     margin: 0 auto;
     width: 60%;
+  }
+
+  .single-page-header h2{
+    font-size: 3.3em;
+  }
+  
+  .single-page-header .page-detail{ 
+    font-size: 1.2em;
+    width: 80%!important; 
   }
 
   /* our team */
@@ -1260,6 +1319,15 @@ svg {
     font-size: 30px;
   }
 
+  .single-page-header h2{
+    font-size: 3.1em;
+  }
+
+  .single-page-header .page-detail{ 
+    font-size: 1em;
+    width: 100%!important; 
+  }
+  
   .about-index .container-md{
     margin: 0 auto;
     text-align: center;
