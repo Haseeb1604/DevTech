@@ -59,6 +59,12 @@ a:hover {
 a:focus,
 a:hover { color: #28ABE3; }
 
+.fb{ color: #3b5998; }
+.tw{ color: #1DA1F2; }
+.ln{ color: #183a83; }
+.gm{ color: #BB001B; }
+.gh{ color: #131313; }
+
 .btn-main {
   background: transparent;
   border: 1px solid #28ABE3;
@@ -245,10 +251,10 @@ a:hover { color: #28ABE3; }
 }
 
 .border {
-  height: 2px;
-  margin: 20px auto 20px;
+  margin: 10px auto 20px;
   position: relative;
-  width: 80px;
+  width: 60px;
+  height: 5px;
   background: #28ABE3;
 }
 
@@ -572,16 +578,16 @@ a:hover { color: #28ABE3; }
 
 .team-box h5 {
   font-weight: 900;
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 24px;
-  /* text-shadow: 0px 3px 2px grey; */
+  font-size: 1.5em;
 }
 
 .team-box h6 {
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 1.125em;
   font-weight: 500;
-  /* text-shadow: 0px 1px 1px white, 0px 2px 1px grey; */
+}
+
+.team-box p {
+  font-size: 1em;
 }
 
 .team-box a {
@@ -590,11 +596,15 @@ a:hover { color: #28ABE3; }
   color: #474747;
 }
 
-.icons {
-  font-size: 20px;
+.team-box .icons {
+  font-size: 1.125em;
   margin-left: 20px;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.team-box .icons:hover{ 
+  transform: scale(1.1);
 }
 
 /*==================================
@@ -1419,6 +1429,19 @@ svg {
 }
 
 @media(max-width:576px) {
+  .team-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .team-box h5{ font-size: 2em;}
+
+  .team-box h6{ font-size: 1.4em;}
+
+  .team-box p{ font-size: 1.2em;}
+
+  .team-box .icons{ font-size: 1.5em; }
+
   .scroll-arrow-btn {
     margin-top: 38px;
     margin-bottom: 40px
